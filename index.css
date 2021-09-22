@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+
+  
+body {
+  font-family: 'montseratt', sans-serif ;
+}
+
+.app {
+  background-image: url('./cover.jpg') ;
+  background-size: cover;
+  background-position:bottom;
+  transition: 0.4 ease-out;
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;  
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding:15px ;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(155, 46, 46, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(209, 35, 23, 0.75);
+  
+  color: #dbd1d1;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+.search-box .search-bar:focus {
+  background-color: rgba(209, 35, 23, 0.75);
+}
+
+.location-box .location {
+  color: rgb(65, 189, 15);
+  font-size: 40px;
+  font-weight: 500px;
+  text-align: center;
+  text-shadow: 3px 3px rgba(2, 57, 129, 0.89);
+  padding-top: -25px;
+}
+
+.location-box .date {
+  color: rgb(160, 212, 17);
+  font-size: 20px;
+  font-weight: 300px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: rgb(233, 105, 88);
+
+}
+
+.temp {
+  
+  text-align: center;
+  font-size: 80px;
+  color: aqua;
+  padding-top: 15px 20px;
+  
+  border-radius: 450px;
+  font-weight: 900;
+  
+}
+
+.weather {
+  text-align: center;
+  font-size: 40px;
+  color: aquamarine;
+  padding-top: 20px;
+}
